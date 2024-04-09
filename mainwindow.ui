@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QWidget" name="widget_2" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QListWidget" name="playlista"/>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_3" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_4" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QPushButton" name="wyczysc">
+               <property name="text">
+                <string>Wyczyść playlistę</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="dodaj_utwor">
+               <property name="text">
+                <string>Dodaj utwór</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="usun">
+               <property name="text">
+                <string>Usuń utwór</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOdtwarzacz"/>
+   <addaction name="actionWybierz_plik"/>
+   <addaction name="actionOdtw_rz_plik_z_playlisty"/>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOkna">
+    <property name="title">
+     <string>Okna</string>
+    </property>
+    <addaction name="actionOdtwarzacz"/>
+   </widget>
+   <widget class="QMenu" name="menuAkcje">
+    <property name="title">
+     <string>Akcje</string>
+    </property>
+    <addaction name="actionWybierz_plik"/>
+    <addaction name="actionOdtw_rz_plik_z_playlisty"/>
+   </widget>
+   <addaction name="menuOkna"/>
+   <addaction name="menuAkcje"/>
+  </widget>
+  <action name="actionOdtwarzacz">
+   <property name="text">
+    <string>Odtwarzacz</string>
+   </property>
+  </action>
+  <action name="actionWybierz_plik">
+   <property name="text">
+    <string>Odtwórz plik z komputera</string>
+   </property>
+  </action>
+  <action name="actionOdtw_rz_plik_z_playlisty">
+   <property name="text">
+    <string>Odtwórz plik z playlisty</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
